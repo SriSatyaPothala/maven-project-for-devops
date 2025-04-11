@@ -6,8 +6,8 @@ package com.learndevops.app;
 public class App {
 
     private static final String MESSAGE = 
-        "Hello From Avinash Reddy, You are here to master your skills.\n" +
-        "More you share, More you gain. Happy Learning and happy sharing.";
+        "Hello! This app is deployed using AWS CI/CD\n" +
+        "Congratulations, you have Successfully Deployed the application";
 
     public App() {}
 
