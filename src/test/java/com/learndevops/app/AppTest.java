@@ -20,8 +20,8 @@ public class AppTest {
     public void testAppMessage() {
         App app = new App();
         String expectedMessage = 
-            "Hello From Avinash Reddy, You are here to master your skills.\n" +
-            "More you share, More you gain. Happy Learning and happy sharing.";
+            "Hello! This app is deployed using AWS CI/CD\n" +
+        "Congratulations, you have Successfully Deployed the application";
         assertEquals(expectedMessage, app.getMessage(), "The message should match the expected value.");
     }
 }
