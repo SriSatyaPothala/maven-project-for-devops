@@ -1,0 +1,16 @@
+version: 0.0
+os: linux
+files:
+  - source: target/my-app-1.0-SNAPSHOT.war
+    destination: /opt/tomcat/webapps/
+
+hooks:
+  BeforeInstall:
+    - location: scripts/stop.sh
+      timeout: 60
+  AfterInstall:
+    - location: scripts/install.sh
+      timeout: 60
+  ApplicationStart:
+    - location: scripts/start.sh
+      timeout: 60
